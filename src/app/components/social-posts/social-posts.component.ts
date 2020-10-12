@@ -20,7 +20,7 @@ export class SocialPostsComponent implements OnInit {
   }
 
   onSubmit(post: Post) {
-    this.posts.push(post);
+    this.posts.unshift(post);
   }
 
   ngOnInit(): void {
