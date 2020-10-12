@@ -1,0 +1,4 @@
+<div class="body-width centered">
+    <app-submit-post (submitted)="onSubmit($event)"></app-submit-post><br />
+    <app-indiv-post *ngFor="let post of posts" (deleted)="onDelete($event)" [post]="post"></app-indiv-post>
+</div>

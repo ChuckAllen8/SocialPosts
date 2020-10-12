@@ -1,0 +1,12 @@
+<button class="body-width" (click)="displayForm()">New Thought</button>
+<div class="page-cover" [ngClass]="{'hidden': hidden}">
+    <div class="inner">
+        <div class="container">
+            <p class="full-size">Title:</p>
+            <input class="full-size" [(ngModel)]="title" /><br />
+            <p class="full-size">Thought:</p>
+            <textarea class="full-size" [(ngModel)]="thought" ></textarea><br /><br />
+            <button class="full-size" (click)="submit()">Add Post</button>
+        </div>
+    </div>
+</div>
