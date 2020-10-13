@@ -7,15 +7,13 @@ import { Post } from '../../interfaces/post';
   styleUrls: ['./submit-post.component.css']
 })
 export class SubmitPostComponent implements OnInit {
-  title: string;
-  thought: string;
+  post: Post;
   hidden: boolean;
 
   @Output() submitted = new EventEmitter<Post>();
   constructor() {
     this.hidden = true;
-    this.thought = "";
-    this.title = "";
+    this.post = {title: "", thought: ""};
   }
 
   displayForm() {
@@ -26,11 +24,10 @@ export class SubmitPostComponent implements OnInit {
   }
 
   submit() {
-    if(this.title != "" && this.thought != "") {
-      this.submitted.emit({title: this.title, thought: this.thought});
+    if(this.post.title != "" && this.post.thought != "") {
+      this.submitted.emit(this.post);
     }
-    this.title = "";
-    this.thought = "";
+    this.post = {title: "", thought: ""};
     this.hidden = true;
   }
 
