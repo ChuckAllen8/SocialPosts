@@ -10,8 +10,15 @@ export class SocialPostsComponent implements OnInit {
   posts: Post[];
   constructor() {
     this.posts = [
-      {title: "Post 1", thought: "Thought for Post 1"},
-      {title: "Post 2", thought: "Thought for Post 2"}
+      {title: "Shower Thoughts", thought: ".jar sounds cool"},
+      {title: "Real Thoughts", thought: "Java is not cool"},
+      {title: "Omega boss", thought: "It's a boss, not like Alpha Boss, but cooler. More Omega-ey"},
+      {title: "Awesome Title", thought: "Awesome thought, awesome!"},
+      {title: "Yo-De-Le-He-Ho", thought: "Yoddling is the music of music"},
+      {title: "Double Bass", thought: "There is only one way to do bass, double bass."},
+      {title: "Drone Money Maker", thought: "Buy a new roof, use a drone to video record the people installing it. Sell the video to the roof company for more than the roof."},
+      {title: "Scratch That", thought: "The company can buy a drone and do it themselves for cheaper."},
+      {title: "Market Economy", thought: "People charge too much for things."}
     ];
   }
 
